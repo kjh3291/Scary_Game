@@ -1,0 +1,3 @@
+git switch main
+git branch -d test
+git push origin --delete test
