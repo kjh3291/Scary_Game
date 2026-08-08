@@ -27,7 +27,6 @@ driver/output_latency.web=100
 LoadingScreen="*res://scripts/autoloads/loading_screen.gd"
 AudioManager="*res://scripts/autoloads/audio_manager.gd"
 GameState="*res://scripts/autoloads/game_state.gd"
-TesanaWorldEditor="*res://addons/tesana_world_editor/scene_export.gd"
 
 [display]
 
