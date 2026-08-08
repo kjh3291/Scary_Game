@@ -27,6 +27,7 @@ driver/output_latency.web=100
 LoadingScreen="*res://scripts/autoloads/loading_screen.gd"
 AudioManager="*res://scripts/autoloads/audio_manager.gd"
 GameState="*res://scripts/autoloads/game_state.gd"
+SaveSystem="*res://scripts/autoloads/save_system.gd"
 
 [display]
 

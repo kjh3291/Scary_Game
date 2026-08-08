@@ -164,9 +164,13 @@ func _ready() -> void:
 	AudioManager.play_music(MUSIC, -8.0)
 	AudioManager.play_ambient(AMBIENT, -13.0)
 
-	GameState.new_game()
-	_apply_stage()
-	_run_intro()
+	if SaveSystem.has_save() and SaveSystem.load_save():
+		_apply_stage()
+		call_deferred("start_day")
+	else:
+		GameState.new_game()
+		_apply_stage()
+		_run_intro()
 
 func is_input_blocked() -> bool:
 	return _blocking > 0 or _violating or _paused or _choice_open \
@@ -691,6 +695,7 @@ func _do_sleep() -> void:
 			_goto_ending()
 		"next_day":
 			subtitles.say(TextDB.sub("slept_clean"))
+			SaveSystem.save()
 			_blocking -= 1
 			start_day()
 		"repeat_day":
@@ -700,6 +705,7 @@ func _do_sleep() -> void:
 			if line != "":
 				subtitles.say(line)
 			_apply_stage()
+			SaveSystem.save()
 			_blocking -= 1
 			start_day()
 
@@ -848,6 +854,7 @@ func _fix_anomaly(hs: Hotspot) -> void:
 	})
 	subtitles.say(String(TextDB.ANOMALY_FIX_LINES.get(type, "")))
 	hud.refresh()
+	SaveSystem.save()
 	if GameState.all_fixed():
 		subtitles.say(TextDB.sub("bed_sleep_ok"))
 
@@ -1083,6 +1090,7 @@ func _on_violation(reason: String) -> void:
 	await get_tree().create_timer(2.6).timeout
 	await _fade_to(1.0, 0.8)
 	GameState.apply_violation()
+	SaveSystem.save()
 	_apply_stage()
 	_violating = false
 	_blocking -= 1
@@ -1147,6 +1155,7 @@ func _close_pause() -> void:
 
 # --- endings / state ----------------------------------------------------------------------------
 func _goto_ending() -> void:
+	SaveSystem.delete_save()
 	LoadingScreen.change_scene("res://scenes/ui/ending.tscn", 1.0)
 
 func _on_state_changed(_v: int) -> void:

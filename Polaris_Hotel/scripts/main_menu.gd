@@ -46,6 +46,23 @@ func _ready() -> void:
 	_build_background()
 	_build_wordmark()
 	_build_buttons()
+	_build_save_banner()
+
+
+func _build_save_banner() -> void:
+	var info := SaveSystem.peek()
+	if info.is_empty():
+		return
+	var lbl := Label.new()
+	lbl.text = "저장된 게임: %d일차  ·  랜턴 %d개" % [info.get("day", 1), info.get("lanterns", 3)]
+	lbl.add_theme_font_size_override("font_size", 18)
+	lbl.add_theme_color_override("font_color", Color(0.62, 0.58, 0.44, 0.72))
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	lbl.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	add_child(lbl)
+	lbl.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	lbl.offset_left = -300; lbl.offset_right = 300
+	lbl.offset_top = -58;   lbl.offset_bottom = -18
 
 
 func _load_settings() -> void:
