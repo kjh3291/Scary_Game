@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "assets": {
+    "assets/ui/title_poster.webp": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "abandoned Norwegian hotel in polar night, 2D psychological horror, quiet arctic dread, ominous stillness, pixel, abandoned grand hotel silhouette, snowdrifts, faint aurora, one warm yellow window light",
+      "raw_input": {
+        "elements": [
+          "abandoned grand hotel silhouette",
+          "snowdrifts",
+          "faint aurora",
+          "one warm yellow window light"
+        ],
+        "gameName": "Polaris Hotel",
+        "genre": "2D psychological horror",
+        "mood": "quiet arctic dread, ominous stillness",
+        "style": "pixel",
+        "theme": "abandoned Norwegian hotel in polar night",
+        "type": "title_poster"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_4",
+      "updated_at": "2026-08-03T05:23:49.191069"
+    },
+    "assets/textures/backgrounds/corridor.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "abandoned hotel corridor at night, deep blue-black darkness, claustrophobic stillness, pixel, six numbered doors 301-306, red carpet, warm yellow wall sconces, peeling damask wallpaper, snow drifting in",
+      "raw_input": {
+        "elements": [
+          "six numbered doors 301-306",
+          "red carpet",
+          "warm yellow wall sconces",
+          "peeling damask wallpaper",
+          "snow drifting in"
+        ],
+        "mood": "claustrophobic stillness",
+        "name": "corridor",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "abandoned hotel corridor at night, deep blue-black darkness",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_4",
+      "updated_at": "2026-08-03T05:23:49.191069"
+    },
+    "assets/textures/backgrounds/room_301.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "shabby hotel guest room 301 interior at polar night, fragile safety, damp unease, pixel, unmade bed, nightstand with oil lantern, frosted window showing darkness, old furniture, peeling wallpaper",
+      "raw_input": {
+        "elements": [
+          "unmade bed",
+          "nightstand with oil lantern",
+          "frosted window showing darkness",
+          "old furniture",
+          "peeling wallpaper"
+        ],
+        "mood": "fragile safety, damp unease",
+        "name": "room_301",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "shabby hotel guest room 301 interior at polar night",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_4",
+      "updated_at": "2026-08-03T05:23:49.191069"
+    },
+    "assets/textures/backgrounds/exterior.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "abandoned Polaris Hotel exterior in polar night, northern Norway, vast cold isolation, pixel, grand victorian hotel facade, deep snow, aurora, dead trees, no lights except one window",
+      "raw_input": {
+        "elements": [
+          "grand victorian hotel facade",
+          "deep snow",
+          "aurora",
+          "dead trees",
+          "no lights except one window"
+        ],
+        "mood": "vast cold isolation",
+        "name": "exterior",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "abandoned Polaris Hotel exterior in polar night, northern Norway",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_4",
+      "updated_at": "2026-08-03T05:23:49.191069"
+    },
+    "assets/sprites/pickups/lantern.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "old brass oil lantern with warm glowing flame, gentle halo of yellow light, detailed pixel art, eerie cozy contrast against darkness",
+      "raw_input": {
+        "color": "warm amber",
+        "description": "old brass oil lantern with warm glowing flame, gentle halo of yellow light, detailed pixel art, eerie cozy contrast against darkness",
+        "name": "lantern",
+        "pickupType": "custom",
+        "size": 128,
+        "style": "pixel",
+        "type": "pickup"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_6",
+      "updated_at": "2026-08-03T05:25:18.384364"
+    },
+    "assets/sprites/items/rule_note.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "yellowed paper note taped at the corners, handwritten rules in messy ink handwriting, slightly damp and stained, detailed pixel art",
+      "raw_input": {
+        "category": "paper",
+        "description": "yellowed paper note taped at the corners, handwritten rules in messy ink handwriting, slightly damp and stained, detailed pixel art",
+        "name": "rule_note",
+        "size": 256,
+        "style": "pixel",
+        "type": "item"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_6",
+      "updated_at": "2026-08-03T05:25:18.384364"
+    },
+    "assets/sprites/items/anomaly_eyes.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "a cluster of realistic human eyes sprouting from cracked damask wallpaper, wet and blinking, wrong and uncanny, dark blue-black background, detailed pixel art horror",
+      "raw_input": {
+        "category": "anomaly",
+        "description": "a cluster of realistic human eyes sprouting from cracked damask wallpaper, wet and blinking, wrong and uncanny, dark blue-black background, detailed pixel art horror",
+        "name": "anomaly_eyes",
+        "size": 256,
+        "style": "pixel",
+        "type": "item"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_6",
+      "updated_at": "2026-08-03T05:25:18.384364"
+    },
+    "assets/sprites/characters/huldra_idle.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "tall pale woman seen from behind, long black hair covering everything, old white dress, faint cow tail barely visible, standing motionless in darkness as a barely-lit silhouette, Norwegian folklore huldra spirit, eerie, detailed pixel art",
+      "raw_input": {
+        "description": "tall pale woman seen from behind, long black hair covering everything, old white dress, faint cow tail barely visible, standing motionless in darkness as a barely-lit silhouette, Norwegian folklore huldra spirit, eerie, detailed pixel art",
+        "name": "huldra",
+        "size": 256,
+        "state": "idle",
+        "style": "pixel",
+        "type": "character"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_6",
+      "updated_at": "2026-08-03T05:25:18.384364"
+    },
+    "assets/audio/ambient/ambient_abandoned_arctic_hotel_polar_night_hotel.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "freezing arctic wind outside thin hotel walls, distant wood creaks, faint settling groans of an old building, oppressive near-silence, sparse and cold",
+      "raw_input": {
+        "description": "freezing arctic wind outside thin hotel walls, distant wood creaks, faint settling groans of an old building, oppressive near-silence, sparse and cold",
+        "duration": 30,
+        "environment": "abandoned arctic hotel",
+        "name": "polar_night_hotel",
+        "type": "ambient"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_7",
+      "updated_at": "2026-08-03T05:25:41.093615"
+    },
+    "assets/audio/music/music_exploration_polaris_theme.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "minimal dark ambient with norwegian folk melancholy, quiet dread, loneliness, fragile calm, very slow 50 BPM",
+      "raw_input": {
+        "durationSeconds": 60,
+        "gameState": "exploration",
+        "instruments": "sparse detuned piano, music box, low string drone, soft sub pulses",
+        "mood": "quiet dread, loneliness, fragile calm",
+        "name": "polaris_theme",
+        "style": "minimal dark ambient with norwegian folk melancholy",
+        "tempo": "very slow 50 BPM",
+        "type": "music"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_7",
+      "updated_at": "2026-08-03T05:25:41.093615"
+    },
+    "assets/audio/music/jingle_game_over_rule_violation_sting.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "dissonant string stab with distorted music box, short horror sting, wrongness, sudden dread",
+      "raw_input": {
+        "durationSeconds": 4,
+        "mood": "wrongness, sudden dread",
+        "name": "rule_violation_sting",
+        "purpose": "game_over",
+        "style": "dissonant string stab with distorted music box, short horror sting",
+        "type": "jingle"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_7",
+      "updated_at": "2026-08-03T05:25:41.093615"
+    },
+    "assets/ui/wordmark_title.png": {
+      "tool": "mcp__game-assets__generate_ui_kit",
+      "primary_prompt": "Polaris Hotel \u2014 hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold",
+      "raw_input": {
+        "element": {
+          "aspect": "wide_3_1",
+          "id": "wordmark_title",
+          "label": "Polaris Hotel",
+          "size": {
+            "height": 300,
+            "width": 900
+          },
+          "type": "wordmark"
+        },
+        "kit_styleBrief": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold"
+      },
+      "tool_use_id": "mcp__game_assets__generate_ui_kit_8",
+      "updated_at": "2026-08-03T05:26:21.332674"
+    },
+    "assets/ui/panel_rule.png": {
+      "tool": "mcp__game-assets__generate_ui_kit",
+      "primary_prompt": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold",
+      "raw_input": {
+        "element": {
+          "aspect": "portrait_4_3",
+          "id": "panel_rule",
+          "size": {
+            "height": 640,
+            "width": 480
+          },
+          "type": "panel_9slice"
+        },
+        "kit_styleBrief": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold"
+      },
+      "tool_use_id": "mcp__game_assets__generate_ui_kit_33",
+      "updated_at": "2026-08-03T05:48:41.553187"
+    },
+    "assets/ui/icon_lantern.png": {
+      "tool": "mcp__game-assets__generate_ui_kit",
+      "primary_prompt": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold",
+      "raw_input": {
+        "element": {
+          "aspect": "square",
+          "id": "icon_lantern",
+          "size": {
+            "height": 128,
+            "width": 128
+          },
+          "type": "icon"
+        },
+        "kit_styleBrief": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold"
+      },
+      "tool_use_id": "mcp__game_assets__generate_ui_kit_8",
+      "updated_at": "2026-08-03T05:26:21.332674"
+    },
+    "assets/ui/loading_screen.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "abandoned Norwegian hotel in polar night, quiet dread, pixel, dark abandoned hotel corridor receding into blue-black darkness, one warm wall sconce, tall window with heavy snow outside",
+      "raw_input": {
+        "elements": [
+          "dark abandoned hotel corridor receding into blue-black darkness",
+          "one warm wall sconce",
+          "tall window with heavy snow outside"
+        ],
+        "gameName": "Polaris Hotel",
+        "includeProgressBar": true,
+        "style": "pixel",
+        "theme": "abandoned Norwegian hotel in polar night, quiet dread",
+        "type": "loading_screen"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_32",
+      "updated_at": "2026-08-03T05:48:09.318544"
+    },
+    "assets/textures/backgrounds/guest_room.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "shabby abandoned hotel guest room interior at polar night, detailed pixel art, damp unease, fragile shelter, pixel, single bed with dark red covers, wooden dresser, old framed painting, frosted window, one warm wall lamp, peeling damask wallpaper",
+      "raw_input": {
+        "elements": [
+          "single bed with dark red covers",
+          "wooden dresser",
+          "old framed painting",
+          "frosted window",
+          "one warm wall lamp",
+          "peeling damask wallpaper"
+        ],
+        "mood": "damp unease, fragile shelter",
+        "name": "guest_room",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "shabby abandoned hotel guest room interior at polar night, detailed pixel art",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_32",
+      "updated_at": "2026-08-03T05:48:09.318544"
+    },
+    "assets/textures/backgrounds/lobby.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "abandoned grand hotel lobby at night, detailed pixel art, fallen grandeur, cold vast dark, pixel, dusty front desk, toppled chairs, grand staircase, dark chandelier with a few warm candles, huge windows with polar night and snow, dead potted plants",
+      "raw_input": {
+        "elements": [
+          "dusty front desk",
+          "toppled chairs",
+          "grand staircase",
+          "dark chandelier with a few warm candles",
+          "huge windows with polar night and snow",
+          "dead potted plants"
+        ],
+        "mood": "fallen grandeur, cold vast dark",
+        "name": "lobby",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "abandoned grand hotel lobby at night, detailed pixel art",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_32",
+      "updated_at": "2026-08-03T05:48:09.318544"
+    },
+    "assets/textures/backgrounds/elevator_hall.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "old hotel elevator landing at night, detailed pixel art, still, watchful quiet, pixel, brass elevator doors, red carpet, warm wall sconce, framed paintings, small table with dead flowers, dark corridor entrance",
+      "raw_input": {
+        "elements": [
+          "brass elevator doors",
+          "red carpet",
+          "warm wall sconce",
+          "framed paintings",
+          "small table with dead flowers",
+          "dark corridor entrance"
+        ],
+        "mood": "still, watchful quiet",
+        "name": "elevator_hall",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "old hotel elevator landing at night, detailed pixel art",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_32",
+      "updated_at": "2026-08-03T05:48:09.318544"
+    },
+    "assets/ui/btn_play.png": {
+      "tool": "mcp__game-assets__generate_ui_kit",
+      "primary_prompt": "Play \u2014 hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold",
+      "raw_input": {
+        "element": {
+          "aspect": "wide_3_1",
+          "id": "btn_play",
+          "label": "Play",
+          "size": {
+            "height": 96,
+            "width": 256
+          },
+          "type": "button_9slice"
+        },
+        "kit_styleBrief": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold"
+      },
+      "tool_use_id": "mcp__game_assets__generate_ui_kit_33",
+      "updated_at": "2026-08-03T05:48:41.553187"
+    },
+    "assets/ui/btn_quit.png": {
+      "tool": "mcp__game-assets__generate_ui_kit",
+      "primary_prompt": "Quit \u2014 hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold",
+      "raw_input": {
+        "element": {
+          "aspect": "wide_3_1",
+          "id": "btn_quit",
+          "label": "Quit",
+          "size": {
+            "height": 96,
+            "width": 256
+          },
+          "type": "button_9slice"
+        },
+        "kit_styleBrief": "hand-crafted eerie paper and aged brass, deep navy-black darkness with warm candlelight yellow accents, subtle pixel-art texture, Nordic polar-night horror, yellowed taped paper, wax stains, damp and cold"
+      },
+      "tool_use_id": "mcp__game_assets__generate_ui_kit_33",
+      "updated_at": "2026-08-03T05:48:41.553187"
+    },
+    "assets/sprites/items/hotel_door.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "tall dark wooden hotel room door with brass number plate, closed, straight front view, worn and old, detailed pixel art",
+      "raw_input": {
+        "category": "furniture",
+        "description": "tall dark wooden hotel room door with brass number plate, closed, straight front view, worn and old, detailed pixel art",
+        "name": "hotel_door",
+        "size": 256,
+        "style": "pixel",
+        "type": "item"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_34",
+      "updated_at": "2026-08-03T05:49:08.357243"
+    },
+    "assets/sprites/characters/shadow_figure_idle.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "tall shadowy man figure made of pure darkness, wide-brimmed hat, no face, faint cold blue outline, standing perfectly still, full body, detailed pixel art horror",
+      "raw_input": {
+        "description": "tall shadowy man figure made of pure darkness, wide-brimmed hat, no face, faint cold blue outline, standing perfectly still, full body, detailed pixel art horror",
+        "name": "shadow_figure",
+        "size": 256,
+        "state": "idle",
+        "style": "pixel",
+        "type": "character"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_34",
+      "updated_at": "2026-08-03T05:49:08.357243"
+    },
+    "assets/sprites/items/anomaly_writing.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "frantic deep scratch marks torn into old damask wallpaper, gouges and shredded paper, unsettling, dark, detailed pixel art",
+      "raw_input": {
+        "category": "anomaly",
+        "description": "frantic deep scratch marks torn into old damask wallpaper, gouges and shredded paper, unsettling, dark, detailed pixel art",
+        "name": "anomaly_writing",
+        "size": 256,
+        "style": "pixel",
+        "type": "item"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_34",
+      "updated_at": "2026-08-03T05:49:08.357243"
+    },
+    "assets/sprites/items/anomaly_stain.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "large dark wet stain spreading on old wallpaper with dripping streaks, almost shaped like a standing person, moldy edges, detailed pixel art horror",
+      "raw_input": {
+        "category": "anomaly",
+        "description": "large dark wet stain spreading on old wallpaper with dripping streaks, almost shaped like a standing person, moldy edges, detailed pixel art horror",
+        "name": "anomaly_stain",
+        "size": 256,
+        "style": "pixel",
+        "type": "item"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_34",
+      "updated_at": "2026-08-03T05:49:08.357243"
+    },
+    "assets/sprites/items/old_painting.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "old oil painting in ornate golden frame, portrait of a stern pale norwegian man in old suit, dark background, eerie hotel painting, detailed pixel art",
+      "raw_input": {
+        "category": "decorations",
+        "description": "old oil painting in ornate golden frame, portrait of a stern pale norwegian man in old suit, dark background, eerie hotel painting, detailed pixel art",
+        "name": "old_painting",
+        "size": 256,
+        "style": "pixel",
+        "type": "item"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_34",
+      "updated_at": "2026-08-03T05:49:08.357243"
+    },
+    "assets/audio/sfx/player/player_footstep.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "single soft footstep on old carpet, muffled, quiet empty hotel",
+      "raw_input": {
+        "category": "player",
+        "description": "single soft footstep on old carpet, muffled, quiet empty hotel",
+        "duration": 0.5,
+        "name": "footstep",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/environment/environment_door_creak.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "slow heavy wooden door creak, old abandoned hotel, eerie",
+      "raw_input": {
+        "category": "environment",
+        "description": "slow heavy wooden door creak, old abandoned hotel, eerie",
+        "duration": 2,
+        "name": "door_creak",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/environment/environment_door_knock.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "three slow heavy knocks on a wooden door, deep reverb, ominous",
+      "raw_input": {
+        "category": "environment",
+        "description": "three slow heavy knocks on a wooden door, deep reverb, ominous",
+        "duration": 3,
+        "name": "door_knock",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/enemy/enemy_whistle_tune.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "eerie slow human whistle melody echoing from far down a hallway, melancholic folk tune fragment, long reverb, unsettling",
+      "raw_input": {
+        "category": "enemy",
+        "description": "eerie slow human whistle melody echoing from far down a hallway, melancholic folk tune fragment, long reverb, unsettling",
+        "duration": 6,
+        "name": "whistle_tune",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/enemy/enemy_child_laugh.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "very distant child giggle echoing in an empty hall, long reverb, creepy",
+      "raw_input": {
+        "category": "enemy",
+        "description": "very distant child giggle echoing in an empty hall, long reverb, creepy",
+        "duration": 3,
+        "name": "child_laugh",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/ui/ui_paper_rustle.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "old paper rustle, slowly unfolding a damp note",
+      "raw_input": {
+        "category": "ui",
+        "description": "old paper rustle, slowly unfolding a damp note",
+        "duration": 1,
+        "name": "paper_rustle",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/environment/environment_lantern_out.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "a flame being extinguished, soft whoosh into darkness, low airy thump",
+      "raw_input": {
+        "category": "environment",
+        "description": "a flame being extinguished, soft whoosh into darkness, low airy thump",
+        "duration": 1.5,
+        "name": "lantern_out",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/ui/ui_anomaly_fix.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "soft reversed shimmer resolving, eerie glissando settling into calm, brief",
+      "raw_input": {
+        "category": "ui",
+        "description": "soft reversed shimmer resolving, eerie glissando settling into calm, brief",
+        "duration": 1.5,
+        "name": "anomaly_fix",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/environment/environment_elevator_ding.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "old hotel elevator arrival bell, single ding, slightly detuned, long reverb",
+      "raw_input": {
+        "category": "environment",
+        "description": "old hotel elevator arrival bell, single ding, slightly detuned, long reverb",
+        "duration": 2,
+        "name": "elevator_ding",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/ui/ui_sleep_fade.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "soft dark lullaby swell slowly fading down, drowsy, sinking into sleep",
+      "raw_input": {
+        "category": "ui",
+        "description": "soft dark lullaby swell slowly fading down, drowsy, sinking into sleep",
+        "duration": 3,
+        "name": "sleep_fade",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/enemy/enemy_heartbeat.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "single deep heartbeat thud with an eerie metallic ring tail",
+      "raw_input": {
+        "category": "enemy",
+        "description": "single deep heartbeat thud with an eerie metallic ring tail",
+        "duration": 1,
+        "name": "heartbeat",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/ui/ui_menu_click.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "soft deep thud click, like an old brass switch",
+      "raw_input": {
+        "description": "soft deep thud click, like an old brass switch",
+        "name": "menu_click",
+        "style": "minimal horror",
+        "type": "ui",
+        "uiType": "click"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/sfx/ui/ui_hover.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "very quiet airy hover whisper",
+      "raw_input": {
+        "description": "very quiet airy hover whisper",
+        "name": "hover",
+        "style": "minimal horror",
+        "type": "ui",
+        "uiType": "hover"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_35",
+      "updated_at": "2026-08-03T05:49:34.758966"
+    },
+    "assets/audio/voice/nattmannen/voice_name_call.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "\u2026\uc774\ub9ac\ub85c\u2026 \uc640\u2026 \uc774\ub9ac\ub85c\u2026",
+      "raw_input": {
+        "characterName": "nattmannen",
+        "lineName": "name_call",
+        "modelId": "eleven_multilingual_v2",
+        "stability": 0.4,
+        "text": "\u2026\uc774\ub9ac\ub85c\u2026 \uc640\u2026 \uc774\ub9ac\ub85c\u2026",
+        "type": "voice",
+        "voiceId": "HASaEuIpR5CVuLzDK1E1"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_38",
+      "updated_at": "2026-08-03T05:49:54.078624"
+    },
+    "assets/audio/voice/nattmannen/voice_knock_307.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "307\ud638\ub294\u2026 \uc5b4\ub514 \uc788\uc9c0\u2026? \ub098\ub294\u2026 307\ud638\uc5d0 \ubb35\uc5b4\uc57c \ud558\ub294\ub370\u2026",
+      "raw_input": {
+        "characterName": "nattmannen",
+        "lineName": "knock_307",
+        "modelId": "eleven_multilingual_v2",
+        "stability": 0.4,
+        "text": "307\ud638\ub294\u2026 \uc5b4\ub514 \uc788\uc9c0\u2026? \ub098\ub294\u2026 307\ud638\uc5d0 \ubb35\uc5b4\uc57c \ud558\ub294\ub370\u2026",
+        "type": "voice",
+        "voiceId": "HASaEuIpR5CVuLzDK1E1"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_38",
+      "updated_at": "2026-08-03T05:49:54.078624"
+    },
+    "assets/textures/backgrounds/room_302.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "Abandoned grand hotel guest room at polar night, faded green damask wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text, melancholy, cold, haunted, pixel, door on far left wall, brass double bed center-left, tall dark wardrobe right of bed, tall window with heavy curtains far right, two lit wall sconces flanking the bed",
+      "raw_input": {
+        "elements": [
+          "door on far left wall",
+          "brass double bed center-left",
+          "tall dark wardrobe right of bed",
+          "tall window with heavy curtains far right",
+          "two lit wall sconces flanking the bed"
+        ],
+        "mood": "melancholy, cold, haunted",
+        "name": "room_302",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "Abandoned grand hotel guest room at polar night, faded green damask wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_26",
+      "updated_at": "2026-08-06T10:07:06.042498"
+    },
+    "assets/textures/backgrounds/room_303.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "Abandoned grand hotel guest room at polar night, dusty rose-red victorian wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text, faded elegance, unsettling, pixel, door on far left wall, vanity table with oval mirror center, cushioned stool, single bed right side, tall window far right edge, lit sconce above the vanity and one near the door",
+      "raw_input": {
+        "elements": [
+          "door on far left wall",
+          "vanity table with oval mirror center",
+          "cushioned stool",
+          "single bed right side",
+          "tall window far right edge",
+          "lit sconce above the vanity and one near the door"
+        ],
+        "mood": "faded elegance, unsettling",
+        "name": "room_303",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "Abandoned grand hotel guest room at polar night, dusty rose-red victorian wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_26",
+      "updated_at": "2026-08-06T10:07:06.042498"
+    },
+    "assets/textures/backgrounds/room_304.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "Abandoned grand hotel guest room at polar night, blue-grey striped wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text, studious, claustrophobic, cold, pixel, door on far left wall, writing desk with scattered papers center-left, tall bookshelf center-right, bed right side, window far right, lit sconces above the desk and beside the bookshelf",
+      "raw_input": {
+        "elements": [
+          "door on far left wall",
+          "writing desk with scattered papers center-left",
+          "tall bookshelf center-right",
+          "bed right side",
+          "window far right",
+          "lit sconces above the desk and beside the bookshelf"
+        ],
+        "mood": "studious, claustrophobic, cold",
+        "name": "room_304",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "Abandoned grand hotel guest room at polar night, blue-grey striped wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_26",
+      "updated_at": "2026-08-06T10:07:06.042498"
+    },
+    "assets/textures/backgrounds/room_305.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "Abandoned grand hotel guest room at polar night, mustard-yellow peeling wallpaper with water stains, painterly pixel art, wide side-view of the whole room, mostly deep navy-black darkness with a single weak amber sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text, decayed, condemned, wrong, pixel, door on far left wall, collapsed broken bed center, fallen tilted paintings, dresser right side, window far right, one single lit sconce near the bed, debris on the floor",
+      "raw_input": {
+        "elements": [
+          "door on far left wall",
+          "collapsed broken bed center",
+          "fallen tilted paintings",
+          "dresser right side",
+          "window far right",
+          "one single lit sconce near the bed",
+          "debris on the floor"
+        ],
+        "mood": "decayed, condemned, wrong",
+        "name": "room_305",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "Abandoned grand hotel guest room at polar night, mustard-yellow peeling wallpaper with water stains, painterly pixel art, wide side-view of the whole room, mostly deep navy-black darkness with a single weak amber sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_26",
+      "updated_at": "2026-08-06T10:07:06.042498"
+    },
+    "assets/textures/backgrounds/room_306.png": {
+      "tool": "mcp__game-assets__generate_2d_images_batch",
+      "primary_prompt": "Abandoned grand hotel guest room at polar night, dark plum-purple wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text, heavy, gothic, watchful, pixel, door on far left wall, stone fireplace with dead embers center, leather armchair facing the fireplace, bed far right, window right side, lit sconces above the fireplace and beside the bed",
+      "raw_input": {
+        "elements": [
+          "door on far left wall",
+          "stone fireplace with dead embers center",
+          "leather armchair facing the fireplace",
+          "bed far right",
+          "window right side",
+          "lit sconces above the fireplace and beside the bed"
+        ],
+        "mood": "heavy, gothic, watchful",
+        "name": "room_306",
+        "perspective": "side-view",
+        "style": "pixel",
+        "theme": "Abandoned grand hotel guest room at polar night, dark plum-purple wallpaper, painterly pixel art, wide side-view of the whole room, deep navy-black shadows with warm amber pools of sconce light, snow blizzard outside the window, 30 years abandoned, no people, no text",
+        "type": "background"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_images_batch_26",
+      "updated_at": "2026-08-06T10:07:06.042498"
+    },
+    "assets/sprites/effects/camera_flash.png": {
+      "tool": "mcp__game-assets__generate_2d_assets_batch",
+      "primary_prompt": "bright white camera flash burst with star-like lens flare spokes, pixel art, centered burst with transparent margin",
+      "raw_input": {
+        "color": "white",
+        "description": "bright white camera flash burst with star-like lens flare spokes, pixel art, centered burst with transparent margin",
+        "effectType": "custom",
+        "name": "camera_flash",
+        "size": 256,
+        "style": "pixel",
+        "type": "effect"
+      },
+      "tool_use_id": "mcp__game_assets__generate_2d_assets_batch_30",
+      "updated_at": "2026-08-06T10:10:24.409421"
+    },
+    "assets/audio/sfx/player/player_camera_shutter.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "vintage film camera shutter click, mechanical mirror slap, crisp and satisfying, single shot",
+      "raw_input": {
+        "category": "player",
+        "description": "vintage film camera shutter click, mechanical mirror slap, crisp and satisfying, single shot",
+        "duration": 1,
+        "name": "camera_shutter",
+        "type": "sfx"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_31",
+      "updated_at": "2026-08-06T10:10:34.065238"
+    },
+    "assets/audio/sfx/ui/ui_camera_raise.mp3": {
+      "tool": "mcp__game-audio__generate_audio_batch",
+      "primary_prompt": "small mechanical click of a camera being raised and switched on, subtle, quiet",
+      "raw_input": {
+        "description": "small mechanical click of a camera being raised and switched on, subtle, quiet",
+        "name": "camera_raise",
+        "style": "minimal",
+        "type": "ui",
+        "uiType": "transition"
+      },
+      "tool_use_id": "mcp__game_audio__generate_audio_batch_31",
+      "updated_at": "2026-08-06T10:10:34.065238"
+    }
+  }
+}
