@@ -1115,36 +1115,137 @@ func _toggle_pause() -> void:
 		_close_pause()
 		return
 	_paused = true
+
+	# 전체 어둠 오버레이
 	var dim := ColorRect.new()
 	dim.name = "PauseOverlay"
-	dim.color = Color(0, 0, 0, 0.7)
+	dim.color = Color(0, 0, 0, 0.72)
 	dim.process_mode = Node.PROCESS_MODE_ALWAYS
+	dim.mouse_filter = Control.MOUSE_FILTER_STOP
 	_modal_layer.add_child(dim)
 	dim.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+
+	# 가운데 패널
+	var panel := ColorRect.new()
+	panel.color = Color(0.06, 0.06, 0.10, 0.97)
+	panel.process_mode = Node.PROCESS_MODE_ALWAYS
+	dim.add_child(panel)
+	panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
+	panel.offset_left = -210; panel.offset_right = 210
+	panel.offset_top = -265; panel.offset_bottom = 265
+
+	# 패널 테두리선 (좌우)
+	for side in [-1, 1]:
+		var line := ColorRect.new()
+		line.color = Color(0.42, 0.34, 0.20, 0.55)
+		line.custom_minimum_size = Vector2(1, 0)
+		line.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		line.offset_left = 0 if side == -1 else 419
+		line.offset_right = 1 if side == -1 else 420
+		panel.add_child(line)
+
+	# 내용 VBox
 	var vbox := VBoxContainer.new()
-	vbox.alignment = BoxContainer.ALIGNMENT_CENTER
-	vbox.add_theme_constant_override("separation", 24)
-	dim.add_child(vbox)
-	vbox.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	vbox.offset_left = -160
-	vbox.offset_right = 160
-	vbox.offset_top = -120
-	vbox.offset_bottom = 120
+	vbox.add_theme_constant_override("separation", 14)
+	vbox.process_mode = Node.PROCESS_MODE_ALWAYS
+	panel.add_child(vbox)
+	vbox.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	vbox.offset_left = 30; vbox.offset_right = -30
+	vbox.offset_top = 26; vbox.offset_bottom = -26
+
+	# 제목
 	var title := Label.new()
-	title.text = TextDB.sub("pause_title")
+	title.text = "잠시 멈춤"
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	title.add_theme_font_size_override("font_size", 36)
-	title.add_theme_color_override("font_color", Color(0.85, 0.8, 0.68))
+	title.add_theme_font_size_override("font_size", 32)
+	title.add_theme_color_override("font_color", Color(0.88, 0.82, 0.66))
 	vbox.add_child(title)
-	var resume := _make_button(TextDB.BTN_RESUME)
-	vbox.add_child(resume)
-	resume.pressed.connect(func() -> void: _close_pause())
-	var menu := _make_button(TextDB.BTN_MENU)
-	vbox.add_child(menu)
-	menu.pressed.connect(func() -> void:
+
+	vbox.add_child(_make_pause_divider())
+
+	# 상태 정보 (일차 + 랜턴)
+	var status := HBoxContainer.new()
+	status.alignment = BoxContainer.ALIGNMENT_CENTER
+	status.add_theme_constant_override("separation", 20)
+	vbox.add_child(status)
+
+	var day_lbl := Label.new()
+	var day_name: String = String(TextDB.DAY_NAMES.get(GameState.day, ""))
+	day_lbl.text = "%s  (%d일차)" % [day_name, GameState.day]
+	day_lbl.add_theme_font_size_override("font_size", 18)
+	day_lbl.add_theme_color_override("font_color", Color(0.74, 0.70, 0.58))
+	status.add_child(day_lbl)
+
+	var sep := Label.new()
+	sep.text = "│"
+	sep.add_theme_color_override("font_color", Color(0.32, 0.28, 0.20))
+	status.add_child(sep)
+
+	var lantern_lbl := Label.new()
+	var ls := ""
+	for i in GameState.MAX_LANTERNS:
+		ls += "●" if i < GameState.lanterns else "○"
+	lantern_lbl.text = "랜턴  " + ls
+	lantern_lbl.add_theme_font_size_override("font_size", 18)
+	var lc := Color(1.05, 0.80, 0.38) if GameState.lanterns > 1 else Color(0.90, 0.32, 0.22)
+	lantern_lbl.add_theme_color_override("font_color", lc)
+	status.add_child(lantern_lbl)
+
+	vbox.add_child(_make_pause_divider())
+
+	var sp := Control.new()
+	sp.custom_minimum_size = Vector2(0, 2)
+	vbox.add_child(sp)
+
+	# 계속하기
+	var btn_resume := _make_button("  계속하기")
+	btn_resume.custom_minimum_size = Vector2(300, 62)
+	btn_resume.pressed.connect(func() -> void: _close_pause())
+	vbox.add_child(btn_resume)
+
+	# 설정
+	var btn_settings := _make_button("  설정")
+	btn_settings.custom_minimum_size = Vector2(300, 62)
+	btn_settings.pressed.connect(func() -> void:
+		_close_pause()
+		LoadingScreen.change_scene("res://scenes/ui/settings.tscn", 0.5))
+	vbox.add_child(btn_settings)
+
+	# 메인 메뉴
+	var btn_menu := _make_button("  메인 메뉴")
+	btn_menu.custom_minimum_size = Vector2(300, 62)
+	btn_menu.pressed.connect(func() -> void:
 		_close_pause()
 		LoadingScreen.change_scene("res://scenes/main.tscn", 0.8))
+	vbox.add_child(btn_menu)
+
+	# 새 게임 (강조 색으로 구분)
+	var btn_new := _make_button("  새 게임  (저장 삭제)")
+	btn_new.custom_minimum_size = Vector2(300, 62)
+	btn_new.add_theme_color_override("font_color", Color(0.82, 0.40, 0.30))
+	btn_new.add_theme_color_override("font_hover_color", Color(1.0, 0.52, 0.40))
+	btn_new.pressed.connect(func() -> void:
+		_close_pause()
+		SaveSystem.delete_save()
+		LoadingScreen.change_scene("res://scenes/main.tscn", 0.8))
+	vbox.add_child(btn_new)
+
+	# ESC 힌트
+	var hint := Label.new()
+	hint.text = "ESC — 닫기"
+	hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	hint.add_theme_font_size_override("font_size", 15)
+	hint.add_theme_color_override("font_color", Color(0.42, 0.40, 0.32, 0.6))
+	vbox.add_child(hint)
+
 	get_tree().paused = true
+
+
+func _make_pause_divider() -> ColorRect:
+	var div := ColorRect.new()
+	div.color = Color(0.38, 0.30, 0.18, 0.50)
+	div.custom_minimum_size = Vector2(0, 1)
+	return div
 
 func _close_pause() -> void:
 	get_tree().paused = false
